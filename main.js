@@ -59,7 +59,6 @@ function printerError2(s) {
 
 const printerError3 = s => `${s.replace(/[a-m]/gi, "").length}/${s.length}`;
 
-console.log(printerError3('aaaaaaaaaaaaaaaabbbbbbbbbbbbbbbbbbmmmmmmmmmmmmmmmmmmmxyz'))
 
 // The function should take three arguments - operation(string/char), value1(number), value2(number).
 // The function should return result of numbers after applying the chosen operation.
@@ -109,8 +108,6 @@ const countSheep = function(num){
   return sheep
 }
 
-console.log(countSheep(3))
-
 
 // Complete the square sum function so that it squares each number passed into it and then sums the results together.
 
@@ -122,7 +119,6 @@ numbers.forEach(el=>{
 return answer
 }
 
-console.log(squareSum([1,2,2]))
 
 // using reduce
 
@@ -130,5 +126,42 @@ function squareSum2(numbers){
   return numbers.reduce((acc,c)=>acc += c**2,0) 
 }
 
-console.log(squareSum2([1,2,2]))
 
+
+
+// Take in 2 numbers and return true if one is even and one is odd
+
+
+function lovefunc(flower1, flower2){
+  if(flower1%2 ===0 && flower2%2 !=0 || flower2%2===0 && flower1%2 !=0){
+    return true
+  }
+  else {
+    return false
+  }
+}
+
+
+// cleaner code
+function lovefunc(flower1, flower2){
+  return flower1 % 2 !== flower2 % 2;
+}
+
+
+
+// Given an array of integers your solution should find the smallest integer.
+
+
+class SmallestIntegerFinder {
+  findSmallestInt(args) {
+    return Math.min.apply(null,args)
+  }
+}
+
+// Return the next square if sq is a perfect square, -1 otherwise
+
+function findNextSquare(sq) {
+  return Math.sqrt(sq)%1? -1 : Math.pow(Math.sqrt(sq)+1,2);
+}
+
+console.log(findNextSquare(9))
