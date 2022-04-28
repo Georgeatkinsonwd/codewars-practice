@@ -165,3 +165,24 @@ function findNextSquare(sq) {
 }
 
 console.log(findNextSquare(9))
+
+
+// return the minimum and the maximum number in an array 
+
+function minMax(arr){
+let min = Math.min(...arr)
+let max = Math.max(...arr)
+let array = [min,max]
+return array
+}
+
+// cleaner code
+function minMax(arr){
+  return [Math.min(...arr), Math.max(...arr)];
+}
+
+
+// return a greetings that takes in a name
+function greet(name){
+  return `Hello, ${name} how are you doing today?`
+}
