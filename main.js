@@ -186,3 +186,39 @@ function minMax(arr){
 function greet(name){
   return `Hello, ${name} how are you doing today?`
 }
+
+
+// Write a function to split a string and convert it into an array of words.
+
+function stringToArray(string){
+  return string.split(" ")
+
+}
+
+// Given a non-empty array of integers, return the result of multiplying the values together in order
+
+function grow(x){
+  return x.reduce((acc,c) => acc * c)
+  }
+
+
+ // Write a function feast that takes the animal's name and dish as arguments and returns true or false to indicate whether the beast is allowed to bring the dish to the feast.
+
+
+function feast(beast, dish) {
+    return beast[0]===dish[0] && beast[beast.length-1]===dish[dish.length-1]? true : false
+    }
+
+
+
+function countSheeps(arrayOfSheep) {
+    return arrayOfSheep.filter(Boolean).length
+    
+  }
+
+  console.log(countSheeps([true,  true,  true,  false,
+    true,  true,  true,  true ,
+    true,  false, true,  false,
+    true,  false, false, true ,
+    true,  true,  true,  true ,
+    false, false, true,  true]))
