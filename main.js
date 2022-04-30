@@ -216,9 +216,11 @@ function countSheeps(arrayOfSheep) {
     
   }
 
-  console.log(countSheeps([true,  true,  true,  false,
-    true,  true,  true,  true ,
-    true,  false, true,  false,
-    true,  false, false, true ,
-    true,  true,  true,  true ,
-    false, false, true,  true]))
+
+    function DNAtoRNA(dna) {
+      // create a function which returns an RNA sequence from the given DNA sequence
+
+      return dna.replace(/T/g, 'U')
+    }
+
+    console.log(DNAtoRNA('TTTT'))
