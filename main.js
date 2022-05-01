@@ -217,10 +217,33 @@ function countSheeps(arrayOfSheep) {
   }
 
 
-    function DNAtoRNA(dna) {
-      // create a function which returns an RNA sequence from the given DNA sequence
+// create a function which returns an RNA sequence from the given DNA sequence
 
-      return dna.replace(/T/g, 'U')
+ function DNAtoRNA(dna) {
+
+  return dna.replace(/T/g, 'U')
+  }
+
+   
+
+
+// Check to see if a string has the same amount of 'x's and 'o's. The method must return a boolean and be case insensitive.
+    
+
+function XO(str) {
+    let x = str.toLowerCase().split('').filter(letter => letter == 'x')
+    let o = str.toLowerCase().split('').filter(letter => letter =='o')
+    if (x.length === o.length){
+      return true
     }
+    else return false
+  }
+  
 
-    console.log(DNAtoRNA('TTTT'))
+// codewars answer
+
+function XO(str) {
+  let x = str.match(/x/gi);
+  let o = str.match(/o/gi);
+  return (x && x.length) === (o && o.length);
+}
