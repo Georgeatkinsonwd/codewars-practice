@@ -257,3 +257,25 @@ class Kata {
 }
 
 console.log(Kata.getVolumeOfCuboid(10,10,10))
+
+
+
+// if name same as owner return hello boss
+
+function greet (name, owner) {
+  return name === owner ? 'Hello boss' : 'Hello guest'
+}
+
+
+// work out if your car can make the distance
+
+const zeroFuel = (distanceToPump, mpg, fuelLeft) => {
+  return mpg * fuelLeft >= distanceToPump ? true : false
+};
+
+// return an intverted array of numbers
+
+function invert(array) {
+  return array.map(function(array){return array * -1})
+   
+}
