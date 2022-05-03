@@ -279,3 +279,15 @@ function invert(array) {
   return array.map(function(array){return array * -1})
    
 }
+
+// create a function that returns a sentence in order reversed.
+
+function reverseWords(str){
+let arr = str.split(" ")
+let reversed = arr.map(el=>{
+  return el.split('').reverse().join("")
+})
+return reversed.join(" ")
+  
+}
+
