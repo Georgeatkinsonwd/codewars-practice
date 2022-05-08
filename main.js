@@ -291,9 +291,21 @@ return reversed.join(" ")
   
 }
 
-
+// return an array as full sentence
 function smash (words) {
   return words.join(' ')
 };
 
-console.log(smash(['hello', 'world', 'this', 'is', 'great'] ))
+// count positive numbers and add negative numbers to an array
+
+
+function countPositivesSumNegatives(input) {
+    if (!input || input.length == 0) return [];
+    let sum = 0, count = 0;
+    input.forEach(function(el){ if (el > 0) count++; else sum+=el});
+    return [count, sum];
+  }
+
+
+
+console.log(countPositivesSumNegatives([0,0]))
