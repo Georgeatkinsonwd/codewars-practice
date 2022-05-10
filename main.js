@@ -329,3 +329,20 @@ function expressionMatter(a, b, c) {
   return Math.max(...arrayAns)
 }
 
+// capitalize the start of every letter
+
+function toJadenCase(sentence) {
+  //...
+  let jadenCase = sentence.split(" ")
+  return jadenCase.map(el => el[0].toUpperCase() + el.slice(1)).join(" ")
+};
+
+console.log(toJadenCase('hello i am jaden smith'))
+
+
+// suppose to do it 
+String.prototype.toJadenCase = function () { 
+  return this.split(" ").map(function(word){
+    return word.charAt(0).toUpperCase() + word.slice(1);
+  }).join(" ");
+}
