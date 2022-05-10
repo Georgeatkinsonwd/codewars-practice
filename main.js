@@ -308,4 +308,24 @@ function countPositivesSumNegatives(input) {
 
 
 
-console.log(countPositivesSumNegatives([0,0]))
+// check to see if a contains x
+
+function check(a, x) {
+  return x === a.find(el => el === x)
+}
+// could also use include()
+
+
+// Given three integers a ,b ,c, return the largest number obtained after inserting the following operators and brackets: +, *, ()
+
+
+function expressionMatter(a, b, c) {
+  let arrayAns = []
+  arrayAns.push(a * (b+c))
+  arrayAns.push(a * b * c)
+  arrayAns.push(a + b * c)
+  arrayAns.push((a + b) * c)
+  arrayAns.push(a+b+c)
+  return Math.max(...arrayAns)
+}
+
