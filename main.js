@@ -337,8 +337,6 @@ function toJadenCase(sentence) {
   return jadenCase.map(el => el[0].toUpperCase() + el.slice(1)).join(" ")
 };
 
-console.log(toJadenCase('hello i am jaden smith'))
-
 
 // suppose to do it 
 String.prototype.toJadenCase = function () { 
@@ -346,3 +344,18 @@ String.prototype.toJadenCase = function () {
     return word.charAt(0).toUpperCase() + word.slice(1);
   }).join(" ");
 }
+
+
+function accum(s) {
+let arr = s.split("")
+ for(let i=1; i<arr.length; i++){
+    arr[i] = arr[i].repeat(i + 1)
+ }
+let ans = arr.map(function(word){
+  return word.charAt(0).toUpperCase() + word.slice(1).toLowerCase()
+}).join("-")
+return ans
+}
+
+
+console.log(accum('abcd'))
