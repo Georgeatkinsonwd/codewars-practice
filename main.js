@@ -388,7 +388,28 @@ welsh: 'Croeso'
     
   }
 
- return database[language]||database[english]
+ return database[language]||database.english
 }
 
-console.log(greet('polish'))
+
+// add the numbers then covert to binary 
+
+function addBinary(a,b) {
+let sum = a + b
+let quotient 
+let remainder = ''
+for (let i=0; sum/2>0;i++){
+quotient = Math.floor(sum/2)
+remainder += (sum%2).toString()
+sum = Math.floor(sum/2)
+
+}
+return remainder.split("").reverse().join("")
+
+}
+
+// codewars answer 
+function addBinary(a,b){
+  return (a+b).toString(2)
+}
+
