@@ -413,3 +413,9 @@ function addBinary(a,b){
   return (a+b).toString(2)
 }
 
+
+// return n * m if either are great than 0
+
+function paperwork(n, m) {
+  return n <0 || m < 0 ? 0 : n*m
+}
