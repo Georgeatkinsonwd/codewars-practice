@@ -419,3 +419,15 @@ function addBinary(a,b){
 function paperwork(n, m) {
   return n <0 || m < 0 ? 0 : n*m
 }
+
+// return intials
+
+function abbrevName(name){
+  let splitName = name.split(" ")
+  splitName = splitName[0].charAt(0).toUpperCase() + '.' + splitName[1].charAt(0).toUpperCase()
+  return splitName
+  
+    
+  }
+
+console.log(abbrevName('George Atkinson'))
