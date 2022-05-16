@@ -430,4 +430,23 @@ function abbrevName(name){
     
   }
 
-console.log(abbrevName('George Atkinson'))
+
+
+// return any number below 5 with 0 and aboe with 1 
+
+
+function fakeBin(x){
+  let y = x.split('')
+  let z = y.map(numb=>{
+    if (numb <5){
+      return 0
+    }
+    else if(numb => 5){
+      return 1
+    }
+  })
+  return z.join("")
+}
+
+
+console.log(fakeBin('3756'))
