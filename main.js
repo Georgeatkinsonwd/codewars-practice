@@ -452,3 +452,15 @@ function fakeBin(x){
 function fakeBin2(x) {
   return x.split('').map(n => n < 5 ? 0 : 1).join('');
 }
+
+
+// reverse sequence 
+const reverseSeq = n => {
+  let arr = []
+  for (let i=n; i >0; i--){
+    arr.push(i)
+    }
+    return arr
+};
+
+console.log(reverseSeq(5))
