@@ -463,4 +463,17 @@ const reverseSeq = n => {
     return arr
 };
 
-console.log(reverseSeq(5))
+
+
+// if name starts with r 
+
+function areYouPlayingBanjo(name) {
+    if (name[0] === 'r' || name[0] === 'R'){
+      return name + " plays banjo"
+    }
+    else {
+      return name + " does not play banjo"
+    }
+}
+
+console.log(areYouPlayingBanjo('Robbie'))
