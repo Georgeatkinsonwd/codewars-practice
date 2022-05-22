@@ -476,4 +476,9 @@ function areYouPlayingBanjo(name) {
     }
 }
 
-console.log(areYouPlayingBanjo('Robbie'))
+function sumOfDifferences(arr) {
+  let sorted = arr.sort((a,b)=>{return a-b})
+  return sorted
+}
+
+console.log(sumOfDifferences([2,1,10]))
