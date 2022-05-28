@@ -476,9 +476,13 @@ function areYouPlayingBanjo(name) {
     }
 }
 
+
 function sumOfDifferences(arr) {
-  let sorted = arr.sort((a,b)=>{return a-b})
-  return sorted
+  return arr.length > 1 ? Math.max(...arr) - Math.min(...arr) : 0;
 }
 
-console.log(sumOfDifferences([2,1,10]))
+
+function sum (numbers) {
+  return numbers.reduce((acc,c) => acc + c,0)
+  
+};
