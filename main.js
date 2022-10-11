@@ -486,3 +486,20 @@ function sum (numbers) {
   return numbers.reduce((acc,c) => acc + c,0)
   
 };
+
+
+
+
+
+
+function shark(pontoonDistance, sharkDistance, youSpeed, sharkSpeed, dolphin){
+  if (sharkDistance / sharkSpeed > pontoonDistance / youSpeed ){
+    return "Alive!"
+  }
+  else if (dolphin == true && sharkDistance/(sharkSpeed/2) > pontoonDistance / youSpeed) {
+           return "Alive"
+           }
+  else {
+    return "Shark Bait!"
+  }
+}
