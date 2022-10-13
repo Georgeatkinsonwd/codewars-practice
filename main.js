@@ -503,3 +503,41 @@ function shark(pontoonDistance, sharkDistance, youSpeed, sharkSpeed, dolphin){
     return "Shark Bait!"
   }
 }
+
+
+// better answer 
+
+function shark(pontoonDistance, sharkDistance, youSpeed, sharkSpeed, dolphin){
+  if(dolphin){
+    sharkSpeed /= 2;
+  }
+  return pontoonDistance/youSpeed < sharkDistance/sharkSpeed ? "Alive!" : "Shark Bait!";
+}
+
+
+function testingOne(arr){
+
+  if(arr[0] < arr[arr.length - 1]){
+      alert("hi")
+  }
+  else if(arr[0] > arr[arr.length -1]){
+      alert("bye")
+  }
+  else{
+      alert("we are closed")
+  }
+}
+
+
+const returnEven = (arr) =>{
+  const evenNumb = []
+  arr.forEach(x => {
+    if(x%2 ==0){
+      evenNumb.push(x)
+    }
+  })
+  return evenNumb
+}
+
+
+console.log(returnEven([1,2,3,4,5,6]))
