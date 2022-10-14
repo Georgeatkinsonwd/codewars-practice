@@ -539,5 +539,12 @@ const returnEven = (arr) =>{
   return evenNumb
 }
 
+// remove vowels from string.
 
-console.log(returnEven([1,2,3,4,5,6]))
+
+const removeVowels = (str) => {
+  const newStr = str.replace(/[aeiou]/gi, "")
+  return newStr
+}
+
+console.log(removeVowels("hello world"))
