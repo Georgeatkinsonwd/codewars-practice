@@ -548,3 +548,13 @@ const removeVowels = (str) => {
 }
 
 console.log(removeVowels("hello world"))
+
+
+
+function squareDigits(num){
+  let squared = Number(num.toString().split('').map(x => x**2).join(''))
+  return squared
+}
+
+
+console.log(squareDigits(12345))
