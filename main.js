@@ -547,7 +547,6 @@ const removeVowels = (str) => {
   return newStr
 }
 
-console.log(removeVowels("hello world"))
 
 
 
@@ -557,4 +556,19 @@ function squareDigits(num){
 }
 
 
-console.log(squareDigits(12345))
+function isIsogram(str) {
+  //...
+  let strArr = str.toLowerCase();
+  for (let i = 0; i < strArr.length; i++) {
+      for (let j = 0; j < strArr.length; j++) {
+          if(i!=j){
+            if (strArr[i] == strArr[j]) {
+                return false
+            }
+          }
+      }
+  }
+  return true;
+  }
+
+console.log(isIsogram("isOgram"))
