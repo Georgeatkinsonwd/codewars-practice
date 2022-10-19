@@ -572,3 +572,9 @@ function isIsogram(str) {
   }
 
 console.log(isIsogram("isOgram"))
+
+
+// codewars answer -- read what Set does
+function isIsogram(str){
+  return new Set(str.toUpperCase()).size == str.length;
+}
