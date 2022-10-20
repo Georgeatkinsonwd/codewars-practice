@@ -16,7 +16,7 @@ let number = function(busStops){
   })
   return people
 }
-console.log(number([[3,0],[9,1],[4,10],[12,2],[6,1],[7,10]]))
+// console.log(number([[3,0],[9,1],[4,10],[12,2],[6,1],[7,10]]))
 
 // codewars answer
 const number2 = (busStops) => busStops.reduce((rem, [on, off]) => rem + on - off, 0);
@@ -571,10 +571,28 @@ function isIsogram(str) {
   return true;
   }
 
-console.log(isIsogram("isOgram"))
+// console.log(isIsogram("isOgram"))
 
 
 // codewars answer -- read what Set does
 function isIsogram(str){
   return new Set(str.toUpperCase()).size == str.length;
+}
+
+
+function highAndLow(numbers){
+  // ..
+   let split = numbers.split(" ")
+   let minNum = Math.min(...split)
+   let maxNum = Math.max(...split)
+   
+   return "" + minNum + " " + maxNum
+   
+  
+}
+
+// better answer
+function highAndLow(numbers){
+  numbers = numbers.split(' ');
+  return `${Math.max(...numbers)} ${Math.min(...numbers)}`;
 }
